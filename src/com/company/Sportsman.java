@@ -4,10 +4,16 @@ public class Sportsman extends Sport {
     private String name;
     private int age;
 
-    public Sportsman(String name, int age) {
+    public Sportsman(String rules, int quantityOfPlayers, String name, int age) {
+        super(rules, quantityOfPlayers);
         this.name = name;
         this.age = age;
     }
+
+    public Sportsman(String rules, int quantityOfPlayers) {
+        super(rules, quantityOfPlayers);
+    }
+
 
     public String getName() {
         return name;
